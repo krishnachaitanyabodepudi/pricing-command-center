@@ -7,7 +7,7 @@
   </defs>
   
   <rect width="800" height="650" fill="#ffffff"/>
-  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000">ETL & Data Flow</text>
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000">ETL &amp; Data Flow</text>
   
   <!-- Staging Tables -->
   <text x="120" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333333">Staging Layer</text>

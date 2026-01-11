@@ -59,7 +59,7 @@
     <text x="375" y="362" font-family="Arial, sans-serif" font-size="9" fill="#666666">ETL Process</text>
     <line x1="420" y1="450" x2="480" y2="345" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style="stroke-dasharray: 3,3"/>
     <line x1="555" y1="345" x2="250" y2="450" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
-    <text x="412" y="392" font-family="Arial, sans-serif" font-size="9" fill="#666666">Transform & Load</text>
+    <text x="412" y="392" font-family="Arial, sans-serif" font-size="9" fill="#666666">Transform &amp; Load</text>
     <line x1="250" y1="550" x2="645" y2="520" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style="stroke-dasharray: 3,3"/>
     <text x="457" y="530" font-family="Arial, sans-serif" font-size="9" fill="#666666">FK Reference</text>
     <line x1="645" y1="590" x2="710" y2="590" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
