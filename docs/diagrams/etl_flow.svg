@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333333" />
+    </marker>
+  </defs>
+  
+  <rect width="800" height="650" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000">ETL & Data Flow</text>
+  
+  <!-- Staging Tables -->
+  <text x="120" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333333">Staging Layer</text>
+    <rect x="50" y="85" width="140" height="60" fill="#e8f4f8" stroke="#4a90a4" stroke-width="1.5" rx="5"/>
+    <text x="120" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">stg_sales</text>
+    <text x="120" y="117" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(~10k rows)</text>
+    <rect x="220" y="85" width="140" height="60" fill="#e8f4f8" stroke="#4a90a4" stroke-width="1.5" rx="5"/>
+    <text x="290" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">stg_price_history</text>
+    <text x="290" y="117" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(~3k rows)</text>
+    <rect x="390" y="85" width="140" height="60" fill="#e8f4f8" stroke="#4a90a4" stroke-width="1.5" rx="5"/>
+    <text x="460" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">stg_discount_events</text>
+    <text x="460" y="117" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(~200 rows)</text>
+  <rect x="200" y="180" width="400" height="280" fill="#fff4e6" stroke="#d4a574" stroke-width="2" rx="5"/>
+  <text x="400" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#8b5a2b">ETL Process (sp_refresh_pricing_mart)</text>
+    <rect x="220" y="220" width="360" height="50" fill="#ffffff" stroke="#d4a574" stroke-width="1.5" rx="5"/>
+    <text x="400" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000000">START: Log ETL Run</text>
+    <rect x="220" y="285" width="360" height="50" fill="#ffffff" stroke="#d4a574" stroke-width="1.5" rx="5"/>
+    <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Validation</text>
+    <text x="400" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(Reject bad data)</text>
+    <rect x="220" y="350" width="360" height="50" fill="#ffffff" stroke="#d4a574" stroke-width="1.5" rx="5"/>
+    <text x="400" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Deduplication</text>
+    <text x="400" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(Natural Key)</text>
+    <rect x="220" y="415" width="360" height="50" fill="#ffffff" stroke="#d4a574" stroke-width="1.5" rx="5"/>
+    <text x="400" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000000">Late-Arriving Data & Overlap Correction</text>
+  <text x="120" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333333">Fact Tables</text>
+    <rect x="50" y="530" width="140" height="50" fill="#fff4e6" stroke="#d4a574" stroke-width="1.5" rx="5"/>
+    <text x="120" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000000">fact_sales</text>
+    <rect x="220" y="530" width="140" height="50" fill="#fff4e6" stroke="#d4a574" stroke-width="1.5" rx="5"/>
+    <text x="290" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000000">fact_price_history</text>
+    <rect x="390" y="530" width="140" height="50" fill="#fff4e6" stroke="#d4a574" stroke-width="1.5" rx="5"/>
+    <text x="460" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000000">fact_discount_events</text>
+    <rect x="570" y="350" width="180" height="60" fill="#ffffff" stroke="#666666" stroke-width="1.5" rx="5"/>
+    <text x="660" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">BI Views</text>
+    <text x="660" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(vw_pricing_bi_dataset,</text>
+    <text x="660" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">vw_sales_daily)</text>
+  <polygon points="570,450 660,470 570,490 600,470" fill="#ffe6e6" stroke="#cc6666" stroke-width="1.5"/>
+  <text x="615" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000000">DQ Gate</text>
+    <line x1="120" y1="145" x2="350" y2="220" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="240" y1="145" x2="380" y2="220" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="460" y1="145" x2="400" y2="220" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="400" y1="270" x2="400" y2="285" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="400" y1="335" x2="400" y2="350" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="400" y1="400" x2="400" y2="415" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="120" y1="465" x2="120" y2="530" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="290" y1="465" x2="290" y2="530" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="460" y1="465" x2="320" y2="530" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="460" y1="555" x2="570" y2="380" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="660" y1="380" x2="660" y2="450" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="660" y1="490" x2="660" y2="410" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style="stroke-dasharray: 3,3"/>
+    <text x="670" y="445" font-family="Arial, sans-serif" font-size="9" fill="#666666">PASS</text>
+</svg>

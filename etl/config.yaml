@@ -1,0 +1,11 @@
+# ETL Configuration
+database:
+  server: localhost
+  port: 1433
+  database: PricingDWH
+  username: sa
+  password: YourStrong!Passw0rd
+  driver: ODBC Driver 17 for SQL Server
+
+pipeline:
+  pipeline_name: pricing_refresh

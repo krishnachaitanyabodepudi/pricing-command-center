@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333333" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000">System Architecture</text>
+  
+  <!-- External Sources -->
+  <text x="100" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333333">External Sources</text>
+    <rect x="50" y="85" width="120" height="50" fill="#f5f5f5" stroke="#666666" stroke-width="1.5" rx="5"/>
+    <text x="110" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">External</text>
+    <text x="110" y="117" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Sources</text>
+    <rect x="650" y="85" width="120" height="50" fill="#f5f5f5" stroke="#666666" stroke-width="1.5" rx="5"/>
+    <text x="710" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000000">BI Tools</text>
+    <rect x="650" y="155" width="120" height="50" fill="#f5f5f5" stroke="#666666" stroke-width="1.5" rx="5"/>
+    <text x="710" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000000">Applications</text>
+  <rect x="40" y="220" width="820" height="450" fill="#f0f0f0" stroke="#333333" stroke-width="2" rx="10" stroke-dasharray="5,5"/>
+  <text x="450" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333333">Docker Environment</text>
+  <rect x="60" y="270" width="380" height="380" fill="#e8f4f8" stroke="#4a90a4" stroke-width="2" rx="5"/>
+  <text x="250" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c5f6f">SQL Server 2022</text>
+    <rect x="80" y="310" width="340" height="80" fill="#ffffff" stroke="#4a90a4" stroke-width="1.5" rx="5"/>
+    <text x="250" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Staging Tables</text>
+    <text x="250" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(stg_sales, stg_price_history,</text>
+    <text x="250" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">stg_discount_events)</text>
+    <rect x="80" y="410" width="340" height="80" fill="#ffffff" stroke="#4a90a4" stroke-width="1.5" rx="5"/>
+    <text x="250" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Fact Tables</text>
+    <text x="250" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(fact_sales, fact_price_history,</text>
+    <text x="250" y="454" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">fact_discount_events)</text>
+    <rect x="80" y="510" width="340" height="80" fill="#ffffff" stroke="#4a90a4" stroke-width="1.5" rx="5"/>
+    <text x="250" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Dimension Tables</text>
+    <text x="250" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(dim_product, dim_region,</text>
+    <text x="250" y="554" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">dim_channel, dim_pricing_rule)</text>
+    <rect x="480" y="310" width="150" height="70" fill="#fff4e6" stroke="#d4a574" stroke-width="1.5" rx="5"/>
+    <text x="555" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">ETL Stored</text>
+    <text x="555" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Procedure</text>
+    <text x="555" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(sp_refresh_pricing_mart)</text>
+    <rect x="660" y="310" width="150" height="70" fill="#ffe6e6" stroke="#cc6666" stroke-width="1.5" rx="5"/>
+    <text x="735" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Data Quality</text>
+    <text x="735" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Checks (DQ)</text>
+    <rect x="480" y="410" width="150" height="70" fill="#e6ffe6" stroke="#66aa66" stroke-width="1.5" rx="5"/>
+    <text x="555" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">Audit Script</text>
+    <text x="555" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(audit_all.py)</text>
+    <rect x="660" y="410" width="150" height="70" fill="#f0e6ff" stroke="#9966cc" stroke-width="1.5" rx="5"/>
+    <text x="735" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">FastAPI Service</text>
+    <text x="735" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(api/main.py)</text>
+    <rect x="480" y="520" width="330" height="70" fill="#ffffff" stroke="#666666" stroke-width="1.5" rx="5"/>
+    <text x="645" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">BI Views</text>
+    <text x="645" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000000">(vw_pricing_bi_dataset, vw_sales_daily, etc.)</text>
+    <line x1="110" y1="125" x2="250" y2="310" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <text x="190" y="212" font-family="Arial, sans-serif" font-size="9" fill="#666666">Load Data</text>
+    <line x1="250" y1="390" x2="480" y2="345" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <text x="375" y="362" font-family="Arial, sans-serif" font-size="9" fill="#666666">ETL Process</text>
+    <line x1="420" y1="450" x2="480" y2="345" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style="stroke-dasharray: 3,3"/>
+    <line x1="555" y1="345" x2="250" y2="450" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <text x="412" y="392" font-family="Arial, sans-serif" font-size="9" fill="#666666">Transform & Load</text>
+    <line x1="250" y1="550" x2="645" y2="520" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style="stroke-dasharray: 3,3"/>
+    <text x="457" y="530" font-family="Arial, sans-serif" font-size="9" fill="#666666">FK Reference</text>
+    <line x1="645" y1="590" x2="710" y2="590" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <text x="687" y="585" font-family="Arial, sans-serif" font-size="9" fill="#666666">Query</text>
+    <line x1="810" y1="520" x2="710" y2="180" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="810" y1="590" x2="710" y2="205" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style=""/>
+    <line x1="555" y1="410" x2="250" y2="410" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style="stroke-dasharray: 3,3"/>
+    <text x="412" y="405" font-family="Arial, sans-serif" font-size="9" fill="#666666">Verify</text>
+    <line x1="630" y1="345" x2="660" y2="345" stroke="#333333" stroke-width="1.5" marker-end="url(#arrowhead)" style="stroke-dasharray: 3,3"/>
+    <text x="655" y="340" font-family="Arial, sans-serif" font-size="9" fill="#666666">Validate</text>
+</svg>
