@@ -211,6 +211,12 @@ It is a proof-driven system built to demonstrate:
 - Performance optimization discipline
 - Production-style reproducibility
 
+## Future Improvements
+
+- Add incremental (CDC-style) loading instead of full refresh
+- Introduce role-based access controls for API consumers
+- Extend DQ checks with volume anomaly detection
+
 ## License
 
 MIT
