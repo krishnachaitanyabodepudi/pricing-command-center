@@ -2,11 +2,17 @@
 
 End-to-End Pricing Data Platform (SQL Server | T-SQL | ETL | Data Quality | FastAPI)
 
+Pricing Command Center is a production-grade pricing data platform designed to model, validate, and serve pricing data for sales and pricing teams in an enterprise retail / B2B environment.
+
 ## Architecture Overview
 
 Pricing Command Center is a production-style data platform that ingests raw pricing and sales data, applies deterministic ETL logic with validation and late-arriving data handling, enforces data quality gates, and serves clean pricing datasets through SQL views and REST APIs.
 
 This project is intentionally built end-to-end and validated with automated audits. Every major component is executable, measurable, and reproducible.
+
+## System Architecture
+
+The diagram below shows how raw pricing and sales data flows from ingestion through ETL, validation, and API exposure in a containerized SQL Server environment.
 
 ![System Architecture](https://raw.githubusercontent.com/krishnachaitanyabodepudi/pricing-command-center/main/docs/diagrams/architecture.svg)
 
@@ -31,6 +37,8 @@ This project is intentionally built end-to-end and validated with automated audi
 - **Performance:** Indexed query optimization
 
 ## Data Flow (ETL & Validation)
+
+This flow illustrates how raw staging data is transformed into analytics-ready facts, validated through data quality gates, and exposed for downstream consumption.
 
 ![ETL & Data Flow](https://raw.githubusercontent.com/krishnachaitanyabodepudi/pricing-command-center/main/docs/diagrams/etl_flow.svg)
 
@@ -102,7 +110,7 @@ Critical failures stop the pipeline immediately.
 
 ## Performance Proof
 
-This project includes a performance validation pack demonstrating measurable improvements.
+This project includes a performance validation pack demonstrating measurable improvements focused on reducing query latency for BI dashboards and downstream pricing lookups.
 
 ### Query Performance Improvements
 
@@ -120,7 +128,7 @@ Artifacts included:
 
 ## API Layer
 
-FastAPI exposes pricing data for downstream consumers.
+FastAPI exposes pricing data for downstream consumers such as pricing dashboards, sales applications, and internal analytics tools.
 
 ### Available Endpoints
 
@@ -193,7 +201,7 @@ OVERALL: PASS
 
 ## Why This Project Exists
 
-This is not a tutorial or sample dataset.
+This is not a tutorial or sample dataset. It is intentionally designed to resemble how pricing data platforms are built, validated, and operated in real organizations.
 
 It is a proof-driven system built to demonstrate:
 
