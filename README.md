@@ -8,7 +8,7 @@ Pricing Command Center is a production-style data platform that ingests raw pric
 
 This project is intentionally built end-to-end and validated with automated audits. Every major component is executable, measurable, and reproducible.
 
-![System Architecture](docs/diagrams/architecture.svg)
+![System Architecture](https://raw.githubusercontent.com/krishnachaitanyabodepudi/pricing-command-center/main/docs/diagrams/architecture.svg)
 
 ## Key Capabilities
 
@@ -32,7 +32,7 @@ This project is intentionally built end-to-end and validated with automated audi
 
 ## Data Flow (ETL & Validation)
 
-![ETL & Data Flow](docs/diagrams/etl_flow.svg)
+![ETL & Data Flow](https://raw.githubusercontent.com/krishnachaitanyabodepudi/pricing-command-center/main/docs/diagrams/etl_flow.svg)
 
 ### Flow Summary
 
@@ -47,7 +47,7 @@ This project is intentionally built end-to-end and validated with automated audi
 
 ## Core Data Model
 
-![Entity Relationship Diagram](docs/diagrams/er_diagram.svg)
+![Entity Relationship Diagram](https://raw.githubusercontent.com/krishnachaitanyabodepudi/pricing-command-center/main/docs/diagrams/er_diagram.svg)
 
 ### Model Highlights
 
